@@ -4,13 +4,13 @@ Implement the AES Encryption and Decryption.
 
 ## Design Steps
 
-Step 1: Define Constants: Establish constants for AES, including the block size (16 bytes) and the number of rounds (10 for AES-128). These constants will be utilized throughout the implementation for encryption and decryption operations.
+    Step 1: Define Constants: Establish constants for AES, including the block size (16 bytes) and the number of rounds (10 for AES-128). These constants will be utilized throughout the implementation for encryption and decryption operations.
 
-Step 2: Implement S-boxes: Create the substitution boxes (S-box and inverse S-box) for the byte substitution process in AES. These will facilitate the non-linear transformation of data during both encryption and decryption, enhancing security against cryptographic attacks.
+    Step 2: Implement S-boxes: Create the substitution boxes (S-box and inverse S-box) for the byte substitution process in AES. These will facilitate the non-linear transformation of data during both encryption and decryption, enhancing security against cryptographic attacks.
 
-Step 3: Create Functions: Develop essential functions such as AddRoundKey, SubBytes, ShiftRows, MixColumns, and their inverse counterparts. Additionally, implement the key expansion function to generate round keys from the original key for use in each encryption round.
+    Step 3: Create Functions: Develop essential functions such as AddRoundKey, SubBytes, ShiftRows, MixColumns, and their inverse counterparts. Additionally, implement the key expansion function to generate round keys from the original key for use in each encryption round.
 
-Step 4: Testing Functionality: Implement a main function to test the AES encryption and decryption. This function will take an input message and key, perform the encryption, and then decrypt the result to verify that the original message is successfully recovered.
+    Step 4: Testing Functionality: Implement a main function to test the AES encryption and decryption. This function will take an input message and key, perform the encryption, and then decrypt the result to verify that the original message is successfully recovered.
 
 ## Algorithm
 
