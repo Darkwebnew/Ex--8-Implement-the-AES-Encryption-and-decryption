@@ -14,7 +14,7 @@ Implement the AES Encryption and Decryption.
 
 <br>
 
-## DESIGN STEPS:
+## ALGORITHM:
 
 <br>
 
@@ -31,26 +31,6 @@ Step 3: Create Functions: Develop functions for AddRoundKey, SubBytes, ShiftRows
 <br>
 
 Step 4: Testing Functionality: Implement a main function to test and validate AES encryption and decryption processes.
-
-<br>
-
-## ALGORITHM:
-
-<br>
-
-1. Key Expansion: The AES algorithm begins with key expansion, where the original key is transformed into a series of round keys. These keys will be used in each round of the encryption and decryption processes to ensure secure data transformation.
-
-<br>
-
-2. Encryption Process: During encryption, the process starts with AddRoundKey, where the initial state is combined with the first round key. In subsequent rounds, the state undergoes SubBytes, ShiftRows, and MixColumns transformations, followed by another AddRoundKey before reaching the final round.
-
-<br>
-
-3. Final Round of Encryption: The final round of encryption is slightly different. It omits the MixColumns step but includes SubBytes, ShiftRows, and a final AddRoundKey operation. This ensures that the data is adequately transformed while maintaining the necessary security level.
-
-<br>
-
-4. Decryption Process: Decryption mirrors the encryption process but in reverse. It begins with AddRoundKey, followed by rounds that involve InvShiftRows, InvSubBytes, and InvMixColumns. The final round also omits the InvMixColumns step, ensuring the original data is recovered securely.
 
 <br>
 
