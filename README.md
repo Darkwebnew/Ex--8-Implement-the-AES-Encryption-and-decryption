@@ -1,28 +1,63 @@
-# Ex-8 Implement the AES Encryption and decryption
-## Aim
+# Ex-8 IMPLEMENT THE AES ENCRYPTION AND DECRYPTION
+
+<br>
+
+## DATE:
+
+<br>
+
+## AIM:
+
+<br>
+
 Implement the AES Encryption and Decryption.
 
-## Design Steps
+<br>
+
+## DESIGN STEPS:
+
+<br>
 
 Step 1: Define Constants: Establish constants for AES block size and number of rounds for implementation.
 
+<br>
+
 Step 2: Implement S-boxes: Create substitution boxes for byte transformation to enhance cryptographic security during encryption.
+
+<br>
 
 Step 3: Create Functions: Develop functions for AddRoundKey, SubBytes, ShiftRows, MixColumns, and key expansion processes.
 
+<br>
+
 Step 4: Testing Functionality: Implement a main function to test and validate AES encryption and decryption processes.
 
-## Algorithm
+<br>
+
+## ALGORITHM:
+
+<br>
 
 1. Key Expansion: The AES algorithm begins with key expansion, where the original key is transformed into a series of round keys. These keys will be used in each round of the encryption and decryption processes to ensure secure data transformation.
 
+<br>
+
 2. Encryption Process: During encryption, the process starts with AddRoundKey, where the initial state is combined with the first round key. In subsequent rounds, the state undergoes SubBytes, ShiftRows, and MixColumns transformations, followed by another AddRoundKey before reaching the final round.
+
+<br>
 
 3. Final Round of Encryption: The final round of encryption is slightly different. It omits the MixColumns step but includes SubBytes, ShiftRows, and a final AddRoundKey operation. This ensures that the data is adequately transformed while maintaining the necessary security level.
 
+<br>
+
 4. Decryption Process: Decryption mirrors the encryption process but in reverse. It begins with AddRoundKey, followed by rounds that involve InvShiftRows, InvSubBytes, and InvMixColumns. The final round also omits the InvMixColumns step, ensuring the original data is recovered securely.
 
-## Program
+<br>
+
+## PROGRAM:
+
+<br>
+
 ```
 #include <iostream>
 #include <iomanip>
@@ -236,10 +271,18 @@ void aesDecrypt(uint8_t input[AES_BLOCK_SIZE], uint8_t key[AES_BLOCK_SIZE], uint
 }
 ```
 
-## Output:
+<br>
+
+## OUTPUT:
+
+<br>
 
 ![image](https://github.com/user-attachments/assets/20e2447f-edb9-4a0b-ba1c-2c70d48e8882)
 
-## Result:
+<br>
+
+## RESULT:
+
+<br>
 
 The program successfully encrypts and decrypts the input message using AES algorithm, demonstrating the effectiveness of the implemented AES functions.
